@@ -1,0 +1,16 @@
+def responder_pregunta(pregunta):
+    if pregunta == "¿Cómo te llamas?":
+        return "Zaza, ¿Y tú?"
+    elif pregunta == "¿Cuál es tu anime favorito?":
+        return "Naruto."
+    elif pregunta == "¿Cuál es tu personaje favorito?":
+        return "Sakura."
+    else:
+        return "El mío también."
+
+While True:
+     pregunta = input("Hazme una pregunta o escribe 'salir' para terminar:")
+if pregunta.lower() == "salir":
+    break
+ respuesta = responder_pregunta(pregunta)
+ print(respuesta)
